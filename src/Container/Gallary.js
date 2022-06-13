@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Gallary(props) {
+function Dialog(props) {
     return (
  <div className="container-fluid py-5 px-0">
   <div className="container py-5">
@@ -75,4 +75,4 @@ function Gallary(props) {
     );
 }
 
-export default Gallary;
+export default Dialog;

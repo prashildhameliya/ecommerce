@@ -60,8 +60,10 @@ function Header(props) {
                             </a>
                             <div className="navbar-nav mr-auto py-0">
                                 <NavLink  to= {"/Service"} className="nav-item nav-link">Service</NavLink>
-                                <NavLink  to= {"/Gallery"} className="nav-item nav-link">Gallery</NavLink>
+                                <NavLink  to= {"/Dialog"} className="nav-item nav-link">Dialog</NavLink>
+                                <NavLink  to= {"/Gallary"} className="nav-item nav-link">Gallary</NavLink>
                                 <NavLink  to= {"/Contact"} className="nav-item nav-link">Contact</NavLink>
+                                <NavLink  to= {"/Auth"} className="nav-item nav-link">Signup</NavLink>
                             </div>
                         </div>
                     </nav>
