@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { isLogin } from './Index';
+import { isLogin } from '../Utils/index';
 
 function PrivateRote({component : Component , ...prashil}) {
     return (

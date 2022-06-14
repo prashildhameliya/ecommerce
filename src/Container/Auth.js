@@ -103,7 +103,7 @@ function Auth(props) {
     return (
         <section id="appointment" className="appointment d-flex">
             <div className="container">
-                <div className='section-title'>
+                <div className='section-title pt-5 pb-5'>
                     {
                         reset ?
                             <h2 className='centerr'>Reset Password</h2> :
@@ -113,15 +113,15 @@ function Auth(props) {
                 <div className='php-email-form'>
                     <Formik value={formik}>
                         <Form onSubmit={formik.handleSubmit}>
-                            <div className='row align-items-center justify-content-center'>
+                            <div className='row  '>
                                 {
                                     userType === 'Login' ? null
                                         :
-                                        <div className="col-md-7 form-group">
+                                        <div className="col-md-12 form-group">
                                             <input
                                                 type="text"
                                                 name="name"
-                                                className="form-control"
+                                                className="form-control p-4"
                                                 id="name"
                                                 placeholder="Your Name"
                                                 onChange={formik.handleChange}
@@ -137,10 +137,10 @@ function Auth(props) {
                                             <div className="validate" />
                                         </div>
                                 }
-                                <div className="col-md-7 form-group mt-3 mt-md-0">
+                                <div className="col-md-12 form-group mt-3 mt-md-0 control-group">
                                     <input
                                         type="text"
-                                        className="form-control"
+                                        className="form-control p-4"
                                         name="email"
                                         id="email"
                                         placeholder="Your Email"
@@ -157,10 +157,10 @@ function Auth(props) {
                                 {
                                     reset === true ?
                                         null :
-                                        <div className="col-md-7 form-group mt-3 mt-md-0">
+                                        <div className="col-md-12 form-group mt-3 mt-md-0">
                                             <input
                                                 type="password"
-                                                className="form-control"
+                                                className="form-control p-4"
                                                 name="password"
                                                 id="password"
                                                 placeholder="Your Password"
@@ -178,15 +178,15 @@ function Auth(props) {
                                 {
                                     reset ?
                                         <div className="text-center">
-                                            <button type="submit">Forgot password</button><br></br>
+                                            <button className='btn btn-primary btn-block' type="submit">Forgot password</button><br></br>
                                         </div>
                                         :
                                         userType === 'Login' ?
                                             <div className="text-center">
-                                                <button type="submit">Login</button><br></br>
+                                                <button className='btn btn-primary btn-block' type="submit">Login</button><br></br>
                                             </div> :
                                             <div className="text-center">
-                                                <button type="submit">signup</button>
+                                                <button className='btn btn-primary btn-block' type="submit">signup</button>
                                             </div>
                                 }
                                 {
@@ -203,7 +203,7 @@ function Auth(props) {
                                             </div> :
                                             <div className='text-center mt-5'>
                                                 <span>already have an account ?</span>
-                                                <a onClick={() => { setUserType('Login') }} >    Login</a>
+                                                <a onClick={() => { setUserType('Login') }}>    Login</a>
                                             </div>
                                 }
                             </div>

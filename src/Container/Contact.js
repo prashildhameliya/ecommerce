@@ -93,7 +93,7 @@ function Contact(props) {
                   <button type="submit" className="btn btn-primary btn-block py-3 px-5" id="sendMessageButton">Send Message</button>
                 </div>
               </form>
-            </div>``  
+            </div> 
           </Form>
           </Formik>
           </div>

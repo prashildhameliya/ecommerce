@@ -22,10 +22,10 @@ function App() {
         <PubliceRote  exact path={"/About"} component={About}/>
         <PrivateRote  exact path={"/Product"} component={Product}/>
         <PubliceRote  exact path={"/Service"} component={Service}/>
-        <PubliceRote  exact path={"/Dialog"} component={Dialog}/>
+        <PrivateRote  exact path={"/Dialog"} component={Dialog}/>
         <PubliceRote  exact path={"/Gallary"} component={Gallary}/>
         <PubliceRote  restricated={true} exact path={"/Auth"} component={Auth}/>
-        <PubliceRote  exact path={"/Contact"} component={Contact}/>
+        <PrivateRote  exact path={"/Contact"} component={Contact}/>
       </Switch>
       <Footer />
     </>
